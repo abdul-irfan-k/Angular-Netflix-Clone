@@ -1,3 +1,19 @@
-<h1 class="px-3 text-3xl font-bold text-red-500 underline md:z-10">
-  Hello world! asdf
-</h1>
+<div>
+  <app-header></app-header>
+
+  <app-hero-content-block
+    title="Enjoy on your TV"
+    description="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
+    imageSrc="/images/banner1.png"
+  >
+  </app-hero-content-block>
+  <app-hero-content-block
+    title="Watch everywhere"
+    description="Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
+    [isReverse]="true"
+    imageSrc="/images/banner2.png "
+  >
+  </app-hero-content-block>
+
+  <app-footer></app-footer>
+</div>

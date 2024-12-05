@@ -1,7 +1,7 @@
-@theme {
+:root {
   /* Colors */
 
-  --color-*: initial;
+  /* --color-*: initial; */
   /* Primary */
   --color-primary-black: #000000;
   --color-primary-white: #ffffff;

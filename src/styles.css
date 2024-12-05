@@ -1,3 +1,6 @@
+@import './assets/styles/primitives/color.css';
+@import './assets/styles/token.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
