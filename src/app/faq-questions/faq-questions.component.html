@@ -1,1 +1,20 @@
-<p>faq-questions works!</p>
+<div class="flex w-full flex-col" (click)="handleClick()">
+  <div
+    class="relative flex items-center justify-between px-6 py-6 hover:bg-[#2d2d2d]"
+    [ngClass]="isHovered ? 'bg-[#2d2d2d]' : 'bg-[#414141]'"
+  >
+    <span class="text-xl leading-[20px] text-primary-white">{{ title }}</span>
+    <svg-icon
+      [src]="isHovered ? '/icon/Cross.svg' : '/icon/PlusThin.svg'"
+      class="svg h-7 w-7 fill-primary-red"
+    ></svg-icon>
+  </div>
+
+  @if (isHovered) {
+    <div class="bg-[#2a2a2a] p-6">
+      <span class="text-2xl font-normal leading-[30px] text-primary-white">{{
+        description
+      }}</span>
+    </div>
+  }
+</div>
