@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-frequently-asked-questions',
   imports: [],
   templateUrl: './frequently-asked-questions.component.html',
-  styleUrl: './frequently-asked-questions.component.css'
 })
 export class FrequentlyAskedQuestionsComponent {
 

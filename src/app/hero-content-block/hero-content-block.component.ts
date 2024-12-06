@@ -5,7 +5,6 @@ import { Component, input, Input } from '@angular/core';
   selector: 'app-hero-content-block',
   imports: [NgClass],
   templateUrl: './hero-content-block.component.html',
-  styleUrl: './hero-content-block.component.css',
 })
 export class HeroContentBlockComponent {
   @Input() title?: string;

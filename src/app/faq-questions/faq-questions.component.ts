@@ -6,7 +6,6 @@ import { SvgIconComponent } from 'angular-svg-icon';
   selector: 'app-faq-questions',
   imports: [SvgIconComponent, NgClass],
   templateUrl: './faq-questions.component.html',
-  styleUrl: './faq-questions.component.css',
 })
 export class FaqQuestionsComponent {
   @Input() title?: string;

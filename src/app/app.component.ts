@@ -4,7 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroContentBlockComponent } from './hero-content-block/hero-content-block.component';
 import { SvgIconComponent } from 'angular-svg-icon';
-import { FaqQuestionsComponent } from "./faq-questions/faq-questions.component";
+import { FaqQuestionsComponent } from './faq-questions/faq-questions.component';
 // import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @Component({
@@ -15,10 +15,9 @@ import { FaqQuestionsComponent } from "./faq-questions/faq-questions.component";
     FooterComponent,
     HeroContentBlockComponent,
     SvgIconComponent,
-    FaqQuestionsComponent
-],
+    FaqQuestionsComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'netflix-clone';
