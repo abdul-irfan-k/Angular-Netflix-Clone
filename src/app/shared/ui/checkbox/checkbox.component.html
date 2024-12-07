@@ -1,0 +1,34 @@
+<div class="inline-flex items-center">
+  <label class="relative flex cursor-pointer items-center" for="check-2">
+    <input
+      type="checkbox"
+      [checked]="checked"
+      class="checked:bg-slate-800 checked:border-slate-800 peer h-5 w-5 cursor-pointer appearance-none rounded border-2 border-primary-white shadow transition-all hover:shadow-md"
+      id="check-2"
+      (change)="checked = !checked"
+      [disabled]="disabled"
+    />
+    <span
+      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-primary-white opacity-0 peer-checked:opacity-100"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-3.5 w-3.5 fill-primary-white"
+        viewBox="0 0 20 20"
+        fill="white"
+        stroke="white"
+        stroke-width="2"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+          clip-rule="evenodd"
+          fill="white"
+        ></path>
+      </svg>
+    </span>
+  </label>
+  <label class="ml-3 cursor-pointer text-base text-primary-white" for="check-2">
+    {{ label }}
+  </label>
+</div>

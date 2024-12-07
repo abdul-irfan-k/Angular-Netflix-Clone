@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   imports: [NgClass],
 })
 export class NameComponent {
-  @Input() type: 'Default' | 'Primary' | 'Secondary' = 'Default';
+  @Input() type?: 'Default' | 'Primary' | 'Secondary' = 'Default';
   @Input() disabled = false;
   @Input() text = 'Default';
   @Input() iconPosition: 'left' | 'right' = 'left';
@@ -27,7 +27,7 @@ export class NameComponent {
       'px-6 py-3 text-base leading-[24px]': this.size === 'large',
       'px-5 py-2 text-base leading-[24px]': this.size === 'medium',
       'px-4 py-1 text-sm': this.size === 'small',
-      'bg-primary-white/0.20': this.type === 'Default',
+      'bg-transparent-white-20': this.type === 'Default',
     };
   }
 }
