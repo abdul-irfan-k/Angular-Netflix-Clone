@@ -1,0 +1,17 @@
+<div
+  class="fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-[rgba(0,0,0,0.7)]"
+>
+  <div
+    class="relative flex aspect-video w-[80%]"
+    #videoContainer
+    appClickOutside
+    (clickOutside)="handleOutsideClick()"
+  >
+    <youtube-player
+      videoId="{{videoId}}"
+      [width]="videoWidth"
+      [height]="videoHeight"
+      [playerVars]="{autoplay: 1, controls: 1, mute: 0, fs: 1}"
+    ></youtube-player>
+  </div>
+</div>

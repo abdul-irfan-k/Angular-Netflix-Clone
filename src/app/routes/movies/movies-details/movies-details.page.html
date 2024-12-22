@@ -1,0 +1,40 @@
+<div>
+  <app-header></app-header>
+  <div class="mt-11 px-[80px]">
+    <div class="rounded-2xl border-2 border-[#292929] bg-[#ffffff1a] px-8 py-6">
+      <h3 class="text-[24px] font-medium text-primary-white">
+        CBI 5: The Brain
+      </h3>
+
+      <div class="flex flex-col gap-2">
+        <div class="flex gap-[30px] text-[14px] font-medium leading-[21px]">
+          <span>2023</span>
+          <span>U/A 13+</span>
+          <span>Thriller</span>
+        </div>
+      </div>
+      <div class="flex gap-8">
+        <div>
+          <span class="text-[16px] text-primary-white"
+            >When a political leader's sudden death sets off a baffling case for
+            police, it's up to ace detective Sethurama Iyer to unravel the
+            mystery.</span
+          >
+        </div>
+        <div class="text-[13px] leading-[21px]">
+          <span class="font-medium">Stream</span>
+          <span>Mammootty, Soubin Shahir, and Jagathy Sr</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-more-details></app-more-details>
+
+  @if (showPopupVideo) {
+
+  <app-popup-video-player
+    (onOutsideClick)="handleShowVideoClick()"
+  ></app-popup-video-player>
+  }
+  <app-footer></app-footer>
+</div>
