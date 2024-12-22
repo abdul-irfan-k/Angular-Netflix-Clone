@@ -9,11 +9,12 @@ import {
   ViewChild,
 } from '@angular/core';
 import { YouTubePlayer } from '@angular/youtube-player';
+import { ClickOutsideDirective } from '../../directives/click-outside-directive';
 
 @Component({
   selector: 'app-popup-video-player',
   templateUrl: './popup-video-player.html',
-  imports: [YouTubePlayer],
+  imports: [YouTubePlayer, ClickOutsideDirective],
 })
 export class PopupVideoPlayerComponent implements AfterViewInit {
   constructor(private changeDetectorRef: ChangeDetectorRef) {}

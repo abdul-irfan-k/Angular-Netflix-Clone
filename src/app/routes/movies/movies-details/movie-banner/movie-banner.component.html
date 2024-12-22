@@ -1,0 +1,49 @@
+<div class="px-[80px]">
+  <div
+    class="relative aspect-[2/1] w-full overflow-hidden rounded-2xl border-2 border-primary-white"
+  >
+    <img src="{{ bannerUrl }}" alt="banner-image" class="h-full w-full" />
+
+    <div
+      class="absolute bottom-0 bottom-[72px] flex w-full items-end justify-between px-[80px]"
+    >
+      <div class="flex flex-col justify-center gap-3">
+        <div
+          class="rounded-full border-[1px] border-primary-white bg-[#161616af] px-4 py-3"
+        >
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="text-white w-full bg-[transparent] text-[20px] leading-[24px]"
+          />
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+          <div
+            class="w-[70%] rounded-full bg-primary-red py-3 text-center font-[18px] font-medium leading-[18px] text-primary-white"
+          >
+            Join Now
+          </div>
+          <span
+            class="font-[18px] font-medium leading-[18px] text-primary-white"
+            >Endless entertainment starting at ₹149</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="justify-center rounded-full border-[1px] border-primary-white bg-[#161616af] px-7 py-3 text-center font-[18px] font-medium leading-[18px] text-primary-white"
+        (click)="handleShowVideoClick()"
+      >
+        play Trailer
+      </div>
+    </div>
+  </div>
+
+  @if (showPopupVideo) {
+    <app-popup-video-player
+      videoId="L13AUL0HkDk"
+      (outsideClick)="handleOutsideClick()"
+    ></app-popup-video-player>
+  }
+</div>
