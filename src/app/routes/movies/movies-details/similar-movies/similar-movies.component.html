@@ -1,0 +1,11 @@
+<div class="my-11 gap-3 px-[80px]">
+  <h2 class="font-body text-[32px] text-primary-white">You Might Also Like</h2>
+
+  <div class="flex gap-3 overflow-x-scroll">
+    @for (item of movies; track $index) {
+      <div style="flex: 1 1 0; min-width: 10%">
+        <img src="/images/image1.png" alt="" />
+      </div>
+    }
+  </div>
+</div>

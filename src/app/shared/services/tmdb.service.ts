@@ -25,7 +25,9 @@ export class TMDBMovieService {
 
   // Fetch movie details
   getMovieDetails(movieId: string) {
-    return this.httpService.get(`/movie/${movieId}`, { api_key: this.apiKey });
+    return this.httpService.get(`/movie/${movieId}`, {
+      append_to_response: 'credits,similar,trending,videos',
+    });
   }
 
   // Search movies
