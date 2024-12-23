@@ -35,15 +35,8 @@
         class="justify-center rounded-full border-[1px] border-primary-white bg-[#161616af] px-7 py-3 text-center font-[18px] font-medium leading-[18px] text-primary-white"
         (click)="handleShowVideoClick()"
       >
-        play Trailer
+        Play Trailer
       </div>
     </div>
   </div>
-
-  @if (showPopupVideo) {
-    <app-popup-video-player
-      videoId="L13AUL0HkDk"
-      (outsideClick)="handleOutsideClick()"
-    ></app-popup-video-player>
-  }
 </div>

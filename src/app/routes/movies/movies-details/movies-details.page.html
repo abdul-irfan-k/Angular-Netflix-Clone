@@ -1,6 +1,9 @@
 <div>
   <app-header></app-header>
-  <app-movie-banner bannerUrl="/images/banner5.png"></app-movie-banner>
+  <app-movie-banner
+    bannerUrl="/images/banner5.png"
+    (showPopupVideo)="handleShowVideoClick()"
+  ></app-movie-banner>
   <div class="mt-11 px-[80px]">
     <div class="rounded-2xl border-2 border-[#292929] bg-[#ffffff1a] px-8 py-6">
       <h3 class="text-[24px] font-medium text-primary-white">
@@ -30,6 +33,10 @@
     </div>
   </div>
   <app-more-details></app-more-details>
-
+  <app-popup-video-player
+    *ngIf="showPopupVideo"
+    videoId="L13AUL0HkDk"
+    (outsideClick)="handleOutsideClick()"
+  ></app-popup-video-player>
   <app-footer></app-footer>
 </div>

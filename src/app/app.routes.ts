@@ -5,12 +5,6 @@ import { MoviesDetailsPage } from './routes/movies/movies-details/movies-details
 
 export const routes: Routes = [
   { path: '', component: HomePage },
-  {
-    path: 'login',
-    component: LoginPage,
-  },
-  {
-    path: 'movie-details/:id',
-    component: MoviesDetailsPage,
-  },
+  { path: 'login', component: LoginPage },
+  { path: 'movie-details/:movieId', component: MoviesDetailsPage },
 ];

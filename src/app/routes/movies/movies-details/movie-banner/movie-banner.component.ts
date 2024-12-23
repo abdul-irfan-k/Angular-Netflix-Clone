@@ -1,21 +1,14 @@
-import { Component, Input } from '@angular/core';
-import { PopupVideoPlayerComponent } from '../../../../shared/components/popup-video-player/popup-video-player';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-movie-banner',
   templateUrl: './movie-banner.component.html',
-  imports: [PopupVideoPlayerComponent],
 })
 export class MovieBannerComponent {
   @Input() bannerUrl: string = '';
+  @Output() showPopupVideo = new EventEmitter<void>();
 
-  showPopupVideo: boolean = false;
-
-  handleOutsideClick() {
-    this.showPopupVideo = false;
-  }
-
-  handleShowVideoClick() {
-    this.showPopupVideo = true;
+  handleShowVideoClick(): void {
+    this.showPopupVideo.emit();
   }
 }
