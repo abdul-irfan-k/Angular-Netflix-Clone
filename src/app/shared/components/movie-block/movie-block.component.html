@@ -1,0 +1,20 @@
+<div class="my-11 flex flex-col gap-4 px-[84px]">
+  <h2 class="text-[20px] font-medium leading-[18px] text-primary-white">
+    {{ label }}
+  </h2>
+
+  <div class="flex gap-2">
+    <ng-container
+      *ngFor="let movie of movies"
+      class="flex: 1 1 0; min-width: 10%"
+    >
+      <app-movie-card
+        [imageUrl]="movie.imageUrl"
+        [title]="movie.title"
+        [movieId]="movie.id"
+        label="Leaving Soon"
+      >
+      </app-movie-card>
+    </ng-container>
+  </div>
+</div>

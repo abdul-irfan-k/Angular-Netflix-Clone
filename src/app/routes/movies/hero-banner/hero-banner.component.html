@@ -1,0 +1,51 @@
+<div class="relative aspect-video w-full">
+  <div class="relative z-0 h-full w-full">
+    <img src="/images/banner7.png" alt="" />
+    <div
+      class="absolute top-0 z-[5] block h-full w-full"
+      style="
+        background: linear-gradient(
+          180deg,
+          rgba(20, 20, 20, 0) 0%,
+          rgba(20, 20, 20, 0.15) 11.03%,
+          rgba(20, 20, 20, 0.35) 23.77%,
+          rgba(20, 20, 20, 0.58) 47.76%,
+          #141414 91.44%
+        );
+      "
+    ></div>
+  </div>
+
+  <div
+    class="absolute left-[84px] top-[50%] z-[15] flex w-[35%] translate-y-[-50%] flex-col gap-6"
+  >
+    <div class="flex flex-col gap-5">
+      <div></div>
+      <span class="text-[18px] text-primary-white">{{ content }}</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <app-action-button
+        size="medium"
+        text="Play"
+        className="bg-primary-white text-primary-black px-7 py-2"
+      >
+        <svg-icon
+          src="/icon/Play.svg"
+          class="svg h-7 w-7 fill-primary-black"
+          icon
+        ></svg-icon>
+      </app-action-button>
+      <app-action-button
+        size="medium"
+        text="More Info"
+        className="bg-primary-black text-primary-white px-7 py-2"
+      >
+        <svg-icon
+          src="/icon/Info.svg"
+          class="svg h-7 w-7 stroke-primary-white"
+          icon
+        ></svg-icon>
+      </app-action-button>
+    </div>
+  </div>
+</div>

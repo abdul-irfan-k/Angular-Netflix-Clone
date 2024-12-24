@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { FooterComponent } from "../../../core/layout/footer/footer.component";
-import { NameComponent } from "../../../shared/ui/button/action-button.component";
-import { CheckBoxComponent } from "../../../shared/ui/checkbox/checkbox.component";
+import { FooterComponent } from '../../../core/layout/footer/footer.component';
+import { ActionButtonComponent } from '../../../shared/ui/button/action-button.component';
+import { CheckBoxComponent } from '../../../shared/ui/checkbox/checkbox.component';
 
 @Component({
   selector: 'app-login-page',
   templateUrl: './login.page.html',
-  imports: [FooterComponent, NameComponent, CheckBoxComponent],
+  imports: [FooterComponent, ActionButtonComponent, CheckBoxComponent],
 })
 export class LoginPage {}

@@ -23,6 +23,8 @@ export class TMDBMovieService {
     });
   }
 
+
+
   // Fetch movie details
   getMovieDetails(movieId: string) {
     return this.httpService.get(`/movie/${movieId}`, {

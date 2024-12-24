@@ -5,6 +5,7 @@ import { FooterComponent } from '../../core/layout/footer/footer.component';
 import { HeroContentBlockComponent } from './hero-content-block/hero-content-block.component';
 import { SvgIconComponent } from 'angular-svg-icon';
 import { FaqQuestionsComponent } from '../../shared/components/faq-questions/faq-questions.component';
+import { HeroBannerComponent } from "../movies/hero-banner/hero-banner.component";
 
 @Component({
   selector: 'app-home-page',
@@ -16,6 +17,7 @@ import { FaqQuestionsComponent } from '../../shared/components/faq-questions/faq
     HeroContentBlockComponent,
     SvgIconComponent,
     FaqQuestionsComponent,
-  ],
+    HeroBannerComponent
+],
 })
 export class HomePage {}
