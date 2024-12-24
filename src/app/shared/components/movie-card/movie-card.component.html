@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center gap-1">
+<div class="flex flex-col items-center gap-1" [routerLink]="['/movie-details']">
   <div
     class="relative h-full w-full rounded-sm"
     style="
@@ -15,11 +15,11 @@
     <div class="absolute left-2 top-2">
       <img src="/images/logo-small.png" alt="" class="aspect-auto h-[20px]" />
     </div>
-    <div
-      class="bottom-0 left-[50%] w-fit translate-x-[-50%] bg-primary-red px-1 py-[2px]"
+    <!-- <div
+      class="absolute bottom-2 left-[50%] w-fit translate-x-[-50%] bg-primary-red px-1 py-[2px]"
     >
       {{ label }}
-    </div>
+    </div> -->
   </div>
   <span class="text-[18px] text-primary-white">{{ title }}</span>
 </div>

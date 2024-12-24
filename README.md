@@ -4,16 +4,37 @@ This is a Netflix clone project built with Angular. The project aims to replicat
 
 <br>
 
-## Folder Structure
 
-- **Core**: Manages app-wide logic and singleton services.
-- **Shared**: Houses reusable code shared across the app.
-- **Routes**: Feature modules for specific application functionalities.
+## 📁 Project Structure 
 
-<br>
+The project structure is as follows:
 
+```plaintext
+/*
+src/
+├── app/
+│   ├── core/ - Core services and interceptors.
+│   │   ├── services/ - Data and business logic services.
+│   │   └── interceptors/ - HTTP request/response interceptors.
+│   ├── routes/ - Page components.
+│   │   ├── home/
+│   │   ├── movies/
+│   │   └── tv-shows/
+│   └── shared/ - Shared components and directives.
+│       ├── components/ - Reusable components.
+│       └── directives/ - Custom directives.
+├── assets/ - Static assets.
+│   └── styles/ - Global styles.
+├── environments/ - Environment configurations.
+│   ├── environment.prod.ts - Production config.
+│   └── environment.ts - Development config.
+└── styles/ - Global SCSS styles.
+   ├── main.scss - Main SCSS file.
+   └── variables.scss - SCSS variables.
+*/
+```
 
-## Setup and Installation
+## 🚀 Setup and Installation
 
 Follow these steps to set up the project locally:
 
@@ -34,6 +55,19 @@ Follow these steps to set up the project locally:
    ```
    http://localhost:4200
    ```
+
+   <br>
+   
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<br>
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or issues, feel free to open an issue or submit a pull request.
+
 <br>
 
 ### Thanks for checking out this project! Your support is appreciated!

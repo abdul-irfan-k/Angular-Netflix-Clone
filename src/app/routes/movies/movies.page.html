@@ -3,6 +3,51 @@
     <app-header></app-header>
   </div>
   <app-hero-banner></app-hero-banner>
-  <app-movie-block [label]=""></app-movie-block>
+  <div class="mt-[-300px]">
+    <app-movie-block
+      [label]="movies.recommended.title"
+      [movies]="movies.recommended.movies"
+    />
+    <app-movie-block
+      [label]="movies.popular.title"
+      [movies]="movies.popular.movies"
+    />
+    <app-movie-block
+      [label]="movies.trending.title"
+      [movies]="movies.trending.movies"
+    />
+    <app-movie-block
+      [label]="movies.topRated.title"
+      [movies]="movies.topRated.movies"
+    />
+    <app-movie-block
+      [label]="movies.thriller.title"
+      [movies]="movies.thriller.movies"
+    />
+    <app-movie-block
+      [label]="movies.action.title"
+      [movies]="movies.action.movies"
+    />
+    <app-movie-block
+      [label]="movies.comedy.title"
+      [movies]="movies.comedy.movies"
+    />
+    <app-movie-block
+      [label]="movies.drama.title"
+      [movies]="movies.drama.movies"
+    />
+    <app-movie-block
+      [label]="movies.romance.title"
+      [movies]="movies.romance.movies"
+    />
+    <app-movie-block
+      [label]="movies.horror.title"
+      [movies]="movies.horror.movies"
+    />
+    <app-movie-block
+      [label]="movies.top10.title"
+      [movies]="movies.top10.movies"
+    />
+  </div>
   <app-footer></app-footer>
 </div>

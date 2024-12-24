@@ -1,20 +1,17 @@
-<div class="my-11 flex flex-col gap-4 px-[84px]">
-  <h2 class="text-[20px] font-medium leading-[18px] text-primary-white">
+<div class="mt-11 flex flex-col gap-4 px-[84px]">
+  <h2 class="text-[24px] font-medium text-primary-white">
     {{ label }}
   </h2>
 
   <div class="flex gap-2">
-    <ng-container
-      *ngFor="let movie of movies"
-      class="flex: 1 1 0; min-width: 10%"
-    >
+    <div *ngFor="let movie of movies" style="flex: 1 1 0; min-width: 20%">
       <app-movie-card
-        [imageUrl]="movie.imageUrl"
-        [title]="movie.title"
+        title="movie.title"
         [movieId]="movie.id"
-        label="Leaving Soon"
+        [label]="'Leaving Soon'"
+        imageUrl="https://image.tmdb.org/t/p/original/{{ movie.poster_path }}"
       >
       </app-movie-card>
-    </ng-container>
+    </div>
   </div>
 </div>
