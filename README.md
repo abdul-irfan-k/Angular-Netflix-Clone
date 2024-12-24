@@ -4,8 +4,7 @@ This is a Netflix clone project built with Angular. The project aims to replicat
 
 <br>
 
-
-## 📁 Project Structure 
+## 📁 Project Structure
 
 The project structure is as follows:
 
@@ -28,9 +27,9 @@ src/
 ├── environments/ - Environment configurations.
 │   ├── environment.prod.ts - Production config.
 │   └── environment.ts - Development config.
-└── styles/ - Global SCSS styles.
-   ├── main.scss - Main SCSS file.
-   └── variables.scss - SCSS variables.
+└── styles/ - Global CSS styles.
+   ├── main.css - Main CSS file.
+   └── variables.css - CSS variables.
 */
 ```
 
@@ -57,7 +56,7 @@ Follow these steps to set up the project locally:
    ```
 
    <br>
-   
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
