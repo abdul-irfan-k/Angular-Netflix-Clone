@@ -5,20 +5,24 @@
   <app-hero-banner></app-hero-banner>
   <div class="mt-[-300px]">
     <app-movie-block
-      [label]="movies.recommended.title"
-      [movies]="movies.recommended.movies"
-    />
-    <app-movie-block
       [label]="movies.popular.title"
       [movies]="movies.popular.movies"
+    />
+    <app-movie-block
+      [label]="movies.topRated.title"
+      [movies]="movies.topRated.movies"
     />
     <app-movie-block
       [label]="movies.trending.title"
       [movies]="movies.trending.movies"
     />
     <app-movie-block
-      [label]="movies.topRated.title"
-      [movies]="movies.topRated.movies"
+      [label]="movies.latest.title"
+      [movies]="movies.latest.movies"
+    />
+    <app-movie-block
+      [label]="movies.upcoming.title"
+      [movies]="movies.upcoming.movies"
     />
     <app-movie-block
       [label]="movies.thriller.title"
@@ -43,10 +47,6 @@
     <app-movie-block
       [label]="movies.horror.title"
       [movies]="movies.horror.movies"
-    />
-    <app-movie-block
-      [label]="movies.top10.title"
-      [movies]="movies.top10.movies"
     />
   </div>
   <app-footer></app-footer>

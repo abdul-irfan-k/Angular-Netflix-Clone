@@ -1,0 +1,44 @@
+<div class="mt-11 flex flex-col gap-4 px-[84px]">
+  <h2 class="text-[24px] font-medium text-primary-white">
+    {{ label }}
+  </h2>
+
+  <div class="flex gap-2">
+    <div
+      *ngFor="let movie of movies"
+      style="flex: 1 1 0; min-width: 20%"
+      class="aspect-[2/3]"
+    >
+      <div
+        class="flex flex-col items-center gap-1"
+        [routerLink]="['/movie-details']"
+      >
+        <div
+          class="relative h-full w-full rounded-sm"
+          style="
+            border-radius: 2px;
+            background:
+              lightgray 50% / cover no-repeat,
+              url(<path-to-image>) lightgray 50% / cover no-repeat,
+              url(<path-to-image>) lightgray 50% / cover no-repeat,
+              #333;
+          "
+        >
+          <img
+            src="https://image.tmdb.org/t/p/original/{{ movie.poster_path }}"
+            alt=""
+            class="h-full w-full"
+          />
+
+          <div class="absolute left-2 top-2">
+            <img
+              src="/images/logo-small.png"
+              alt=""
+              class="aspect-auto h-[20px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
